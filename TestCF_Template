@@ -1,0 +1,49 @@
+MyAWSGlueJob:
+    Type: AWS::Glue::Job
+    Properties:
+        Connections:
+            Connections:
+                - string
+        MaxRetries: '1.23'
+        Description: string
+        Timeout: 123
+        AllocatedCapacity: '1.23'
+        Name: string
+        Role: string
+        DefaultArguments: {}
+        NotificationProperty:
+            NotifyDelayAfter: 123
+        WorkerType: string
+        ExecutionClass: string
+        LogUri: string
+        Command:
+            Runtime: string
+            ScriptLocation: string
+            PythonVersion: string
+            Name: string
+        GlueVersion: string
+        ExecutionProperty:
+            MaxConcurrentRuns: '1.23'
+        SecurityConfiguration: string
+        NumberOfWorkers: 123
+        Tags: {}
+        MaxCapacity: '1.23'
+        NonOverridableArguments: {}
+
+
+MyAWSGlueConnection:
+    Type: AWS::Glue::Connection
+    Properties:
+        ConnectionInput:
+            Description: string
+            ConnectionType: string
+            MatchCriteria:
+                - string
+            PhysicalConnectionRequirements:
+                AvailabilityZone: string
+                SecurityGroupIdList:
+                    - string
+                SubnetId: string
+            ConnectionProperties: {}
+            Name: string
+        CatalogId: string
